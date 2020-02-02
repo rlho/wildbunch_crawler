@@ -14,7 +14,7 @@ end
 
 class Parse
 
-  LINE_TOKEN = 'lMTLtbK88EP88ZILNx6PWyNbauyakYWJwJ8rZWxURsk'
+  LINE_TOKEN = 'yjmWD5Gi3JbkmkMLg8GvTqPhWi8zy8OJU45qMxVr7un'
 
   def initialize(site_name:, url:, xpath:)
     @site_name = site_name
