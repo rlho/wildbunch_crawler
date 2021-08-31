@@ -44,7 +44,7 @@ class Parse
       next if status == "No Appointments Available"
       p "can reserve!"
       line_notify = LineNotify.new(LINE_TOKEN)
-      options = { message: "予約が取れます location_id: #{location_id} \n https://telegov.njportal.com/njmvc/AppointmentWizard/15" }
+      options = { message: "予約が取れます location_id: #{location_id} \n https://telegov.njportal.com/njmvc/AppointmentWizard/15/#{location_id}" }
       line_notify.send(options)
     end
   end
