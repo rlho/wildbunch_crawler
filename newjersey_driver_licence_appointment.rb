@@ -38,6 +38,8 @@ class Parse
   end
 
   def send_line(result)
+    p "予約状況を確認します"
+    p result
     result.each do |location_id, status|
       next if status == "No Appointments Available"
       p "can reserve!"
