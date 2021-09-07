@@ -5,7 +5,6 @@ require 'nokogiri'
 require 'line_notify'
 
 class DriverLicenceCrawler
-  TARGET_LOCATION_IDS = [201,203,204,202,198,187,200,206,207,193,194,192,197,186,196]
   def execute
     comfort = Parse.new(url: "https://telegov.njportal.com/njmvc/AppointmentWizard/15", xpath: '//script[contains(text(), "timeData")]')
     comfort.check_stock
@@ -16,6 +15,7 @@ end
 class Parse
 
   LINE_TOKEN = 'yjmWD5Gi3JbkmkMLg8GvTqPhWi8zy8OJU45qMxVr7un'
+  TARGET_LOCATION_IDS = [201,203,204,202,198,187,200,206,207,193,194,192,197,186,196]
 
   def initialize( url:, xpath:)
     @url = url
